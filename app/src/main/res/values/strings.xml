@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music Player</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_playsong">Music Player</string>
+
+
+</resources>

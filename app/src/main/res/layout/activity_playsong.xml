@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#418596"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.n33r.musicplayer.PlaysongActivity">
+
+    <include
+        android:id="@+id/toolbarx"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="When Words Fail Music Speaks"
+            android:textColor="#A00000"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/playimage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mylogo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="endtime" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutdesign"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnbackmove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/buttonback"
+                android:text="|&lt;" />
+
+            <Button
+                android:id="@+id/btnprevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/buttonback"
+                android:text="&lt;&lt;" />
+
+
+            <Button
+                android:id="@+id/btnplaypause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/buttonback"
+                android:textStyle="bold"
+                android:text=" || " />
+
+
+            <Button
+                android:id="@+id/btnforward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/buttonback"
+                android:text=">>" />
+
+            <Button
+                android:id="@+id/btnformove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/buttonback"
+                android:text=">|" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
